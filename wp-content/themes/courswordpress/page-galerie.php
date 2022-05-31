@@ -2,8 +2,8 @@
   
  <!-- Navbar -->
    <div class="w3-top">
-        <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
-            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue"
+        <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black"
                 href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
                     class="fa fa-bars"></i></a>
             <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
@@ -21,13 +21,7 @@
             <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
         </div>
     </div>
-
-    <!-- Header -->
-    <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
-        <h1 class="w3-margin w3-jumbo"><?php bloginfo( 'name' ); ?></h1>
-        <p class="w3-xlarge"><?php bloginfo( 'description' ); ?></p>
-        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Participez !!</button>
-    </header>
+    
 <?php $i = 0; ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <!-- First Grid -->   
@@ -40,7 +34,7 @@
                 <p class="w3-text-grey"><?php the_content(); ?></p>
             </div>
             <div class="w3-third w3-center">
-                <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+                <i class="fa fa-anchor w3-padding-64 w3-text-black"></i>
             </div>
             <?php wp_link_pages(); ?>
             <?php edit_post_link(); ?>
@@ -51,7 +45,7 @@
     <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
         <div class="w3-content">
             <div class="w3-third w3-center">
-                <i class="fa fa-coffee w3-padding-64 w3-text-blue w3-margin-right"></i>
+                <i class="fa fa-coffee w3-padding-64 w3-text-black w3-margin-right"></i>
             </div>
             <div class="w3-twothird">
                 <h1><?php the_title(); ?></h1>
@@ -84,7 +78,7 @@ previous_posts_link();
                 <h1>post not found</h1>               
             </div>
             <div class="w3-third w3-center">
-                <i class="fa fa-search w3-padding-64 w3-text-blue"></i>
+                <i class="fa fa-search w3-padding-64 w3-text-black"></i>
             </div>
             <?php wp_link_pages(); ?>
             <?php edit_post_link(); ?>
