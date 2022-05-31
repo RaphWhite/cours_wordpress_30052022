@@ -1,7 +1,13 @@
+<?php 
+/**
+ *Template Name: Black template
+ */
+?>
+
 <?php get_header() ?>
 
 <?php set_query_var('color', 'black'); ?>
-<?php load_template( TEMPLATEPATH . '/parts/navigation.php', true ); ?>
+<?php load_template( TEMPLATEPATH . '/parts/navigation.php', true); ?>
 
 <?php $i = 0; ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -70,8 +76,7 @@ previous_posts_link();
 
 <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
     <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
-</div>     
-
+</div> 
 
 
 <?php get_footer() ?>

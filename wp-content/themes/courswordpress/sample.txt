@@ -1,0 +1,19 @@
+
+function cw_scripts() {
+
+  // style : base.css
+
+ // wp_enqueue_style( 'monTheme_style_base', get_template_directory_uri(). "/css/base.css", array(), null );
+
+  // script : exemple de js dependant de jquery
+
+ // wp_enqueue_script( 'monTheme_script_exemple', get_template_directory_uri(). "/js/exemple.js", array('jquery'), false );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'monTheme_scripts' );
+
+
+<?php the_post_thumbnail( 'full' ); ?>
+
+<?php $color = isset($color) && !empty($color) ? $color: 'blue'; ?>
